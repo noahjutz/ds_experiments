@@ -16,6 +16,10 @@ gcc -S -O0 -masm=intel -fverbose-asm -m32 -o out.s main.c
 
 ## Compile assembly using [NASM](https://www.nasm.us/docs.php)
 
+?
+
+## Compile assembly using GCC
+
 ```sh
 gcc -m32 out.s
 ```
