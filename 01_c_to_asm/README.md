@@ -1,6 +1,8 @@
 # C to Assembly
 
-## C to asm using [GCC](https://man.archlinux.org/man/gcc.1)
+## Linux
+
+### C to asm using [GCC](https://man.archlinux.org/man/gcc.1)
 
 ```sh
 gcc -S -O0 -masm=intel -fverbose-asm -m32 -o out.s main.c
@@ -14,19 +16,20 @@ gcc -S -O0 -masm=intel -fverbose-asm -m32 -o out.s main.c
 - `-o out.s`: output file
 - `main.c`: input file
 
-## Compile assembly using [NASM](https://www.nasm.us/docs.php)
 
-?
-
-## Compile assembly using GCC
+### Compile assembly using GCC
 
 ```sh
 gcc -m32 out.s
 ```
 
-## Minimal asm file
+## Cross-Compile to Windows
 
-## Printf in asm file
+Use `x86_64-w64-mingw32-gcc` with the same options.
+
+```sh
+pacman -S mingw-w64-gcc
+```
 
 ## Further reading
 
